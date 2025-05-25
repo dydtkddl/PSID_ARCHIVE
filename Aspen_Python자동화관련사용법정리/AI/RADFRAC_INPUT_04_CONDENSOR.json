@@ -1,0 +1,79 @@
+[
+  {
+    "functionDescription": "SubcoolingOption",
+    "functionName": "BLK_RADFRAC_Set_TOTALorPARTIALV_CondenserTempOption",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"OPT_SUBCOOL\").Value",
+    "functionNumber": 141,
+    "extraInputs": ["TEMP", "SUBCOOL"]
+  },
+  {
+    "functionDescription": "CondenserTemperature",
+    "functionName": "BLK_RADFRAC_Set_TOTALorPARTIALV_TEMP",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"SC_TEMP\").Value",
+    "functionNumber": 142,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "DegreesSubcooled",
+    "functionName": "BLK_RADFRAC_Set_TOTALorPARTIALV_SUBCOOL",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"DEGSUB\").Value",
+    "functionNumber": 143,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "DestillateSubcoolingOption",
+    "functionName": "BLK_RADFRAC_Set_TOTALorPARTIALV_CoolRefluxandDestillate",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"SC_OPTION\").Value",
+    "functionNumber": 144,
+    "extraInputs": ["REFLUX-AND-DESTILLATE", "REFLUX-ONLY"]
+  },
+  {
+    "functionDescription": "Partial_V_L_CondenserTempOption",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_CondenserTempOption",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"OPT_SUBCOOL\").Value",
+    "functionNumber": 141,
+    "extraInputs": ["TEMP", "SUBCOOL"]
+  },
+  {
+    "functionDescription": "Partial_V_L_Temperature",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_TEMP",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"SC_TEMP\").Value",
+    "functionNumber": 142,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "Partial_V_L_DegreesSubcooled",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_SUBCOOL",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"DEGSUB\").Value",
+    "functionNumber": 143,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "Partial_V_L_DestillateSubcoolingOption",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_CoolRefluxandDestillate",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"SC_OPTION\").Value",
+    "functionNumber": 144,
+    "extraInputs": ["REFLUX-AND-DESTILLATE", "REFLUX-ONLY"]
+  },
+  {
+    "functionDescription": "Partial_V_L_CondenserOption",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_CondenserOption",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"OPT_COND\").Value",
+    "functionNumber": 145,
+    "extraInputs": ["TEMP", "VFRAC"]
+  },
+  {
+    "functionDescription": "Partial_V_L_VaporTemp",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_TEMP_VaporTemp",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"T1\").Value",
+    "functionNumber": 146,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "Partial_V_L_VaporFraction",
+    "functionName": "BLK_RADFRAC_Set_PARTIAL_V_L_TEMP_VaporFraction",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS_RDV\").Value",
+    "functionNumber": 147,
+    "extraInputs": []
+  }
+]

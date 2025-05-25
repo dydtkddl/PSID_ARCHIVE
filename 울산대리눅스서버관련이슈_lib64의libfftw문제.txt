@@ -1,0 +1,18 @@
+ga00에서는 라스파가 잘 돌아갔는데
+ga04에서는 다음과 같은 오류로 라스파가 돌아가지 않았다.
+
+/home/yongsang/Research/simulations/bin/simulate: error while loading shared libraries: libfftw3.so.3: cannot open shared object file: No such file or directory
+
+libfft라는 라이브러리가 없다는 것이었는데
+실제로 확인해보니
+usr/lib64경로에 libfft가 ga04에만 없었다
+
+그래서 이문제를 해결하고자
+ga04에서 이 라이브러리를 apt install하려고 했으나
+네트워크 연결이 되지 않아 설치할 수 없었다
+
+
+그래서 ga00에서 libfft*의 모든 파일을 scp해서 ga04에 보내는 방식을 썼다
+그리고 이를 ga04의 usr/lib64경로에 집어넣고
+
+다시 라스파를 돌렸더니 정상작동했다.

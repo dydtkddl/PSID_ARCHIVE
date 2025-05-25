@@ -1,0 +1,35 @@
+{
+  "config": {
+    "aspen_file": "",
+    "output_name": "",
+    "visible": "False",
+    "reset_params": "True",
+    "retry_attempts": 3,
+    "unit_count": 200
+  },
+  "cases": [
+    {
+      "block_type": "Stream",
+      "block_name": "S1",
+      "input_type": "Temp",
+      "instruction": "1부터 10까지 10간격",
+      "variable_path": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"S1\").Elements(\"Input\").Elements(\"TEMP\").Elements(\"MIXED\").Value"
+    },
+    {
+      "block_type": "RADFRAC_Configuration",
+      "block_name": "B1",
+      "input_type": "NStage",
+      "instruction": "1부터 10까지 10간격",
+      "variable_path": "BLK.Elements(\"B1\").Elements(\"Input\").Elements(\"NSTAGE\").Value"
+    }
+  ],
+  "outputs": [
+    {
+      "block_type": "StreamOutput",
+      "block_name": "S1",
+      "output_type": "MoleFlowPerCompound",
+      "sub_input": "BB",
+      "variable_path": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"S1\").Elements(\"Output\").Elements(\"MOLEFLOW\").Elements(\"MIXED\").Elements(\"BB\").Value"
+    }
+  ]
+}

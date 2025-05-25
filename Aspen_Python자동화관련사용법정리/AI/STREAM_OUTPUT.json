@@ -1,0 +1,83 @@
+[
+    {
+      "functionDescription": "Stream source",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.SOURCE.Value",
+      "functionNumber": 1171
+    },
+    {
+      "functionDescription": "Stream destination",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.DESTINATION.Value",
+      "functionNumber": 1172
+    },
+    {
+      "functionDescription": "Stream phase",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.COMPTYPE.Value",
+      "functionNumber": 1173
+    },
+    {
+      "functionDescription": "Property set",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.PPOPSET.Value",
+      "functionNumber": 1174
+    },
+    {
+      "functionDescription": "Total mol flow per compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.MOLEFLOW.MIXED.<CompoundName>.Value",
+      "functionNumber": 1175
+    },
+    {
+      "functionDescription": "Total mass flow per compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.MASSFLOW.MIXED.<CompoundName>.Value",
+      "functionNumber": 1176
+    },
+    {
+      "functionDescription": "Total volume flow per compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.VOLFLMX.MIXED.Value",
+      "functionNumber": 1177
+    },
+    {
+      "functionDescription": "Mole fraction by compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.MOLEFRAC.MIXED.<CompoundName>.Value",
+      "functionNumber": 1178
+    },
+    {
+      "functionDescription": "Mass fraction by compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.MASSFRAC.MIXED.<CompoundName>.Value",
+      "functionNumber": 1179
+    },
+    {
+      "functionDescription": "Temperature",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.TEMP.MIXED.Value",
+      "functionNumber": 11710
+    },
+    {
+      "functionDescription": "Pressure",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.PRES.MIXED.Value",
+      "functionNumber": 11711
+    },
+    {
+      "functionDescription": "Liquid concentration per compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.X.<CompoundName>.Value",
+      "functionNumber": 11712
+    },
+    {
+      "functionDescription": "Vapor concentration per compound",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.Y.<CompoundName>.Value",
+      "functionNumber": 11713
+    },
+    {
+      "functionDescription": "Vapor fraction",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.VFRAC.MIXED.Value",
+      "functionNumber": 11714
+    },
+    {
+      "functionDescription": "Liquid fraction",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.LFRAC.MIXED.Value",
+      "functionNumber": 11715
+    },
+    {
+      "functionDescription": "Solid fraction",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").Elements(\"<StreamName>\").Output.STR_MAIN.SFRAC.MIXED.Value",
+      "functionNumber": 11716
+    }
+  ]
+  

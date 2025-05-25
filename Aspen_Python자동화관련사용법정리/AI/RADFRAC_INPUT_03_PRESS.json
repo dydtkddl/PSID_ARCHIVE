@@ -1,0 +1,51 @@
+[
+  {
+    "functionDescription": "PressureInputPerspective",
+    "functionName": "BLK_RADFRAC_Set_PressurePerspectiveOption",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"VIEW_PRES\").Value",
+    "functionNumber": 131,
+    "extraInputs": ["TOP/BOTTOM", "PROFILE", "PDROP"]
+  },
+  {
+    "functionDescription": "CondenserPressure",
+    "functionName": "BLK_RADFRAC_Set_TOPBOTTOM_CondenserPressure",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PRES1\").Value",
+    "functionNumber": 132,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "CondenserPressureDrop",
+    "functionName": "BLK_RADFRAC_Set_TOPBOTTOM_CondenserPressureDrop",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PRES2\").Value",
+    "functionNumber": 133,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "StagePressureDrop",
+    "functionName": "BLK_RADFRAC_Set_TOPBOTTOM_StagePressureDrop",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"DP_STAGE\").Value",
+    "functionNumber": 134,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "SetPressureProfile",
+    "functionName": "BLK_RADFRAC_Set_PROFILE_Pressure",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"STAGE_PRES\").Elements(\"5\").Value",
+    "functionNumber": 135,
+    "extraInputs": ["PressureList=[0.2,0.1]", "LocationList=[1,5]"]
+  },
+  {
+    "functionDescription": "PDROPTopStagePressure",
+    "functionName": "BLK_RADFRAC_Set_PDROP_TopStagePressure",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PRES1\").Value",
+    "functionNumber": 136,
+    "extraInputs": []
+  },
+  {
+    "functionDescription": "PDROPStageProfile",
+    "functionName": "BLK_RADFRAC_Set_PDROP_StagePDROP_Profile",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PRES_STAGE1.1\").Value",
+    "functionNumber": 137,
+    "extraInputs": ["LocationList=[1,2]", "StartingStageList=[2,7]", "EndingStageList=[6,10]", "PressureDropList=[0.1,0.2]"]
+  }
+]

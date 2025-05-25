@@ -1,0 +1,60 @@
+<PRJ NAME>
+YS STUDY
+
+<KEY NAME>
+YSAPIKEY
+
+<KEY>
+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
+
+<APPLICATION>
+* LINUX
+
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer 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" \
+  -d '{
+    "model": "gpt-4o-mini",
+    "messages": [
+      {"role": "user", "content": "write a haiku about ai"}
+    ]
+  }'
+
+
+
+-------------
+* PYTHON
+
+from openai import OpenAI
+
+client = OpenAI(
+  api_key="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"
+)
+
+completion = client.chat.completions.create(
+  model="gpt-4o-mini",
+  messages=[
+    {"role": "user", "content": "write a haiku about ai"}
+  ]
+)
+
+print(completion.choices[0].message);
+
+
+------------
+* NODE JS  
+
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: "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",
+});
+
+const completion = openai.chat.completions.create({
+  model: "gpt-4o-mini",
+  messages: [
+    {"role": "user", "content": "write a haiku about ai"},
+  ],
+});
+
+completion.then((result) => console.log(result.choices[0].message));

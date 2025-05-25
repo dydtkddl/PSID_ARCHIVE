@@ -1,0 +1,182 @@
+{ "INPUT" : 
+  {
+      "RADFRAC_Configuration": [
+        { "variable1": "CALC_MODE",   "description": "CalculationType" },
+        { "variable1": "NSTAGE",      "description": "NStage" },
+        { "variable1": "CONDENSER",   "description": "CondenserType" },
+        { "variable1": "REBOILER",    "description": "ReboilerType" },
+        { "variable1": "Phase",       "description": "Phase" },
+        { "variable1": "NPhase",      "description": "Phasenumber" },
+        { "variable1": "CONV_METH",   "description": "ConvergenceMethod" },
+        { "variable1": "BASIS_RR",    "description": "Refluxratio" },
+        { "variable1": "BASIS_L1",    "description": "Refluxrate" },
+        { "variable1": "BASIS_VN",    "description": "BoilupRate" },
+        { "variable1": "BASIS_BR",    "description": "BoilupRatio" },
+        { "variable1": "Q1",          "description": "CondenserDuty" },
+        { "variable1": "QN",          "description": "ReboilerDuty" },
+        { "variable1": "BASIS_D",     "description": "TotalDestillateFlowrate" },
+        { "variable1": "BASIS_B",     "description": "LiquidBottomRate" },
+        { "variable1": "BASIS_D:F",   "description": "DestillateToFeedRatio" },
+        { "variable1": "BASIS_B:F",   "description": "BottomToFeedRatio" }
+      ],
+      "RADFRAC_Streams": [
+        { "variable1": "FEED_STAGE",  "variable2": "<StreamName>", "description": "FeedStage" },
+        { "variable1": "FEED_CONVE2", "variable2": "<StreamName>", "description": "FeedStageLocation" },
+        { "variable1": "PROD_STAGE",  "variable2": "<StreamName>", "description": "ProductStageLocationList" },
+        { "variable1": "PROD_PHASE",  "variable2": "<StreamName>", "description": "ProductPhase" }
+      ],
+      "RADFRAC_Pressure": [
+        { "variable1": "VIEW_PRES",   "description": "PressurePerspectiveOption" },
+        { "variable1": "PRES1",       "description": "CondenserPressure" },
+        { "variable1": "PRES2",       "description": "CondenserPressureDrop" },
+        { "variable1": "DP_STAGE",    "description": "StagePressureDrop" },
+        { "variable1": "PRES1",       "description": "TopStagePressure" }
+      ],
+      "RADFRAC_Condenser": [
+        { "variable1": "OPT_SUBCOOL", "description": "CondenserTempOption" },
+        { "variable1": "SC_TEMP",     "description": "SubcooledTemp" },
+        { "variable1": "DEGSUB",      "description": "DegreeSubcooled" },
+        { "variable1": "SC_OPTION",   "description": "CoolRefluxandDestillate" },
+        { "variable1": "OPT_COND",    "description": "CondenserOption" },
+        { "variable1": "T1",          "description": "VaporTemp" },
+        { "variable1": "BASIS_RDV",   "description": "VaporFraction" }
+      ],
+      "RADFRAC_Reboiler": [
+        { "variable1": "OPT_TH_REB",  "description": "ThermosyphonOption" },
+        { "variable1": "TH_FLOW",     "description": "ReboilerCirculationFlow" },
+        { "variable1": "TH_TEMP",     "description": "OutletTemperature" },
+        { "variable1": "TH_PRES",     "description": "ReboilerOutletPressure" },
+        { "variable1": "RETURN_CONV", "description": "ReboilerReturnLocation" },
+        { "variable1": "TSR_CONFIG",  "description": "ReboilerConfiguration" }
+      ],
+    "Stream": [
+        {
+          "variable1": "MIXED_SPEC",
+          "variable2": "MIXED",
+          "description": "FlashTypeChoice"
+        },
+        {
+          "variable1": "TEMP",
+          "variable2": "MIXED",
+          "description": "Temp"
+        },
+        {
+          "variable1": "PRES",
+          "variable2": "MIXED",
+          "description": "Pressure"
+        },
+        {
+          "variable1": "VFRAC",
+          "variable2": "MIXED",
+          "description": "VaporFraction"
+        },
+        {
+          "variable1": "TOTFLOW",
+          "description": "TotalFlowRate"
+        },
+        {
+          "variable1": "FLOW",
+          "variable2": "MIXED",
+          "variable3": "<CompoundName>",
+          "description": "ComponentFlowRate"
+        }
+    ]
+  },
+
+  "OUTPUT" : 
+          {
+            "StreamOutput": [
+              {
+                "variable1": "MOLEFLOW",
+                "variable2": "MIXED",
+                "variable3": "<CompoundName>",
+                "description": "MoleFlowPerCompound"
+              },
+              {
+                "variable1": "MASSFLOW",
+                "variable2": "MIXED",
+                "variable3": "<CompoundName>",
+                "description": "MassFlowPerCompound"
+              },
+              {
+                "variable1": "MOLEFRAC",
+                "variable2": "MIXED",
+                "variable3": "<CompoundName>",
+                "description": "MoleFracPerCompound"
+              },
+              {
+                "variable1": "MASSFRAC",
+                "variable2": "MIXED",
+                "variable3": "<CompoundName>",
+                "description": "MassFracPerCompound"
+              },
+              {
+                "variable1": "X",
+                "variable2": "<CompoundName>",
+                "description": "LiquidConcentrationPerCompound"
+              },
+              {
+                "variable1": "Y",
+                "variable2": "<CompoundName>",
+                "description": "VaporConcentrationPerCompound"
+              },
+              {
+                "variable1": "COMPTYPE",
+                "description": "StreamPhase"
+              },
+              {
+                "variable1": "PPOPSET",
+                "description": "PropertySet"
+              },
+              {
+                "variable1": "VOLFLMX",
+                "variable2": "MIXED",
+                "description": "VolumeFlowMixed"
+              },
+              {
+                "variable1": "VFRAC",
+                "description": "VaporFraction"
+              },
+              {
+                "variable1": "LFRAC",
+                "description": "LiquidFraction"
+              },
+              {
+                "variable1": "SFRAC",
+                "description": "SolidFraction"
+              }
+            ],
+            "RADFRAC_Output": [
+                  { "variable1": "TOP_TEMP",         "description": "Condenser_Temperature" },
+                  { "variable1": "SCTEMP",           "description": "Condenser_SubcooledTemp" },
+                  { "variable1": "COND_DUTY",        "description": "Condenser_HeatingDuty" },
+                  { "variable1": "SCDUTY",           "description": "Condenser_SubcooledDuty" },
+                  { "variable1": "MOLE_D",           "description": "Condenser_DistillateRate" },
+                  { "variable1": "MOLE_L1",          "description": "Condenser_RefluxRate" },
+                  { "variable1": "MOLE_DW",          "description": "Condenser_FreeWaterDistillateRate" },
+                  { "variable1": "RW",               "description": "Condenser_FreeWaterRefluxRatio" },
+                  { "variable1": "MOLE_DFR",         "description": "Condenser_DistillateToFeedRatio" },
+              
+                  { "variable1": "BOTTOM_TEMP",      "description": "Reboiler_Temperature" },
+                  { "variable1": "REB_DUTY",         "description": "Reboiler_HeatDuty" },
+                  { "variable1": "MOLE_B",           "description": "Reboiler_BottomsRate" },
+                  { "variable1": "MOLE_VN",          "description": "Reboiler_BoilupRate" },
+                  { "variable1": "CMF_MAMX",         "description": "Reboiler_BoilupRatio" },
+                  { "variable1": "MOLE_BFR",         "description": "Reboiler_BottomsToFeedRatio" },
+              
+                  { "variable1": "BAL_MOLI_TFL",     "description": "MoleFlowBalanceIN" },
+                  { "variable1": "BAL_MOLO_TFL",     "description": "MoleFlowBalanceOUT" },
+                  { "variable1": "BAL_MOLR_TFL",     "description": "MoleFlowBalanceRelDifference" },
+                  { "variable1": "BAL_MASI_TFL",     "description": "MassFlowBalanceIN" },
+                  { "variable1": "BAL_MASO_TFL",     "description": "MassFlowBalanceOUT" },
+                  { "variable1": "BAL_MASR_TFL",     "description": "MassFlowBalanceRelDifference" },
+                  { "variable1": "TOT_ENTH_ABS",     "description": "EnthalpyBalanceIN" },
+                  { "variable1": "BAL_ENTH_OUT",     "description": "EnthalpyBalanceOUT" },
+                  { "variable1": "TOT_ENTH_REL",     "description": "EnthalpyBalanceRelDifference" },
+              
+                  { "variable1": "BLKSTAT",          "description": "ConvergenceStatus" },
+                  { "variable1": "BLKMSG",           "description": "ConvergenceMessage" }
+                ]
+  }
+
+}

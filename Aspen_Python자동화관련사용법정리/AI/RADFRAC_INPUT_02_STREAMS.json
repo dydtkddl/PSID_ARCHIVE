@@ -1,0 +1,26 @@
+[
+  {
+    "functionDescription": "FeedStage",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"FEED_STAGE\").Elements(\"<FeedName>\").Value",
+    "functionNumber": 121,
+    "extraInputs": ["<FeedName>"]
+  },
+  {
+    "functionDescription": "FeedStageLocation",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"FEED_CONVE2\").Elements(\"<FeedName>\").Value",
+    "functionNumber": 122,
+    "extraInputs": ["ON-STAGE", "ABOVE-STAGE", "ON-STAGE-VAP", "ON-STAGE-LIQ"]
+  },
+  {
+    "functionDescription": "ProductStreamStage",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PROD_STAGE\").Elements(\"<FeedName>\").Value",
+    "functionNumber": 123,
+    "extraInputs": ["<FeedName>"]
+  },
+  {
+    "functionDescription": "ProductPhase",
+    "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PROD_PHASE\").Elements(\"<FeedName>\").Value",
+    "functionNumber": 124,
+    "extraInputs": ["L", "L1", "L2", "W", "V", "TL", "TV"]
+  }
+]

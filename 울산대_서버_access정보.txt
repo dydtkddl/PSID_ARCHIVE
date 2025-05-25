@@ -1,0 +1,51 @@
+외부 IP : 203.250.74.27
+서브넷마스크: 255.255.255.0
+게이트웨이 : 203.250.74.254
+
+주DNS : 203.250.95.97
+보조DNS : 203.250.95.98
+
+포트: 25000 
+
+root 권한 -> 암호 2024울산대@)@$
+
+ssh ga04만 사용
+
+
+-----
+<서버 접속법 ga00>
+ssh yongsang@203.250.74.27
+password : 9582
+# SET UP
+	관리자 모드 실행
+		[서버] su
+	신규유저 생성
+		[서버] useradd (유저이름)
+	패스워드 설정
+		[서버] passwd (유저이름)
+	권한 추가
+		[서버] chmod +w /etc/sudoers
+		[서버] vim /etc/sudoers
+			(유저이름) ALL=(ALL) ALL
+		[서버] chmod -w /etc/sudoers
+
+<클러스터 접속법 ga04>
+# SET UP
+	su
+	ssh psid(숫자)
+	vim /etc/passwd
+		(유저이름):x:(n):(n+1)::/home/anna:/bin/bash
+	vim /etc/group
+		(유저이름):x:(n+1):
+	chmod +w /etc/sudoers
+	vim /etc/sudoers
+		(유저이름)      ALL=(ALL)       ALL
+	chmod -w /etc/sudoers
+	passwd (유저이름)
+	
+# ga04로 접속
+ssh ga04 
+
+
+<주의사항>
+ga00에서 네트워크로 다운받는 작업을 해야한다.

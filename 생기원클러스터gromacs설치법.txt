@@ -1,0 +1,73 @@
+cd ~
+wget https://ftp.gromacs.org/gromacs/gromacs-2025.2.tar.gz
+tar –xzf gromacs-2025.2.tar.gz
+cd gromacs-2025.2 
+mkdir build 
+cd build 
+export CMAKE_TLS_VERIFY=0
+cmake .. \
+  -DGMX_BUILD_OWN_FFTW=ON \
+  -DREGRESSIONTEST_DOWNLOAD=ON
+make –j {가용가능한 cpu개수}
+make check 
+sudo make install 
+source /usr/local/gromacs/bin/GMXRC
+
+
+---
+만약 gcc gfortran 버전이 낮다고 하면 다음 실행
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/extras/x86_64/centos-release-scl-rh-2-3.el7.centos.noarch.rpm
+sudo rpm -ivh centos-release-scl-rh-2-3.el7.centos.noarch.rpm
+mkdir temp_devtool
+cd temp_devtool
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-gcc-11.2.1-9.el7.x86_64.rpm
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-gcc-c++-11.2.1-9.el7.x86_64.rpm
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-libstdc++-devel-11.2.1-9.el7.x86_64.rpm
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-runtime-11.1-2.el7.x86_64.rpm
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-binutils-2.36.1-1.el7.x86_64.rpm
+sudo rpm -Uvh devtoolset-11-*.rpm
+sudo scl enable devtoolset-11 bash
+mkdir gfortran
+cd gfortran
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-gcc-gfortran-11.2.1-9.el7.x86_64.rpm
+wget --no-check-certificate https://buildlogs.centos.org/centos/7/sclo/x86_64/rh/Packages/d/devtoolset-11-libquadmath-devel-11.2.1-9.el7.x86_64.rpm
+wget ftp://ftp.icm.edu.pl/vol/rzm7/linux-centos-vault/7.6.1810/cr/x86_64/Packages/libgfortran5-8.3.1-2.1.1.el7.x86_64.rpm
+sudo rpm -Uvh *.rpm
+sudo scl enable devtoolset-11 bash
+
+-- 만약 cmake 버전이 낮다고 하면 다음 실행 (HTTPS 지원 cmake 4.02설치)
+루트 권한 없이 CMake를 HTTPS 지원으로 다시 설치하는 방법
+
+[1] OpenSSL 사용자 설치
+cd ~
+mkdir -p local/openssl && cd local
+wget https://www.openssl.org/source/openssl-1.1.1w.tar.gz --no-check-certificate
+tar -xzf openssl-1.1.1w.tar.gz && cd openssl-1.1.1w
+./config --prefix=$HOME/local/openssl --openssldir=$HOME/local/openssl
+make -j$(nproc)
+make install
+
+[2] libcurl 사용자 설치 (OpenSSL에 연결)
+cd ~
+mkdir -p local/curl && cd local
+wget https://curl.se/download/curl-8.7.1.tar.gz --no-check-certificate
+tar -xzf curl-8.7.1.tar.gz && cd curl-8.7.1
+
+./configure --prefix=$HOME/local/curl \
+  --with-ssl=$HOME/local/openssl \
+  --disable-ldap --disable-ldaps
+make -j$(nproc)
+make install
+
+[3] CMake 빌드 시 둘을 명시하여 HTTPS 지원 포함
+cd ~/cmake-4.0.2/
+./bootstrap \
+  --prefix=$HOME/cmake \
+  -- \
+  -DCMAKE_USE_OPENSSL=ON \
+  -DCMAKE_PREFIX_PATH="$HOME/local/curl;$HOME/local/openssl" \
+  -DCMAKE_INCLUDE_PATH="$HOME/local/curl/include;$HOME/local/openssl/include" \
+  -DCMAKE_LIBRARY_PATH="$HOME/local/curl/lib;$HOME/local/openssl/lib"
+
+make -j$(nproc)
+make install

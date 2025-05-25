@@ -1,0 +1,27 @@
+### 방법 1
+# 1. 기존 CMake 제거 (선택 사항)
+sudo yum remove cmake
+
+# 2. 최신 버전 다운로드 (예: 3.28.3)
+wget https://github.com/Kitware/CMake/releases/download/v3.28.3/cmake-3.28.3.tar.gz
+tar -xzf cmake-3.28.3.tar.gz
+cd cmake-3.28.3
+
+# 3. 빌드 및 설치
+./bootstrap --prefix=$HOME/local/cmake-3.28
+make -j$(nproc)
+make install
+
+# 4. PATH 설정
+export PATH=$HOME/local/cmake-3.28/bin:$PATH
+
+
+### 방법 2
+먼저 https://cmake.org/download/ 로 이동하여 cmake 최신 버전을 다운로드한다.
+$ cd ~/Downloads/cmake-3.xxxx/   # or wherever you downloaded cmake
+$ ./bootstrap --prefix=$HOME/cmake-install
+(만약에 SSH설치가 안된다 할시에 대안 : ./bootstrap --prefix=$HOME/cmake -DCMAKE_USE_OPENSSL=OFF)
+$ make 
+$ make install
+
+출처: https://kyubot.tistory.com/144 [Kyubot's All Things Considered:티스토리]

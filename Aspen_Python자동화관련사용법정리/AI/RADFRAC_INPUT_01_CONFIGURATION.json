@@ -1,0 +1,102 @@
+[
+    {
+      "functionDescription": "CalculationType",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"CALC_MODE\").Value",
+      "functionNumber": 111,
+      "extraInputs": ["RIG-RATE", "EQUILIBRIUM"]
+    },
+    {
+      "functionDescription": "NumberOfStagesInColumn",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"NSTAGE\").Value",
+      "functionNumber": 112,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "CondenserType",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"CONDENSER\").Value",
+      "functionNumber": 113,
+      "extraInputs": ["NONE", "TOTAL", "PARTIAL-V", "PARTIAL-V-L"]
+    },
+    {
+      "functionDescription": "ReboilerType",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"REBOILER\").Value",
+      "functionNumber": 114,
+      "extraInputs": ["NONE", "KETTLE", "THERMOSYPHON"]
+    },
+    {
+      "functionDescription": "ValidPhase",
+      "variablePaths": [
+        "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"PHASE\").Value",
+        "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"NPHASE\").Value"
+      ],
+      "functionNumber": 115,
+      "extraInputs": ["V", "L", "S", "1", "2", "3"]
+    },
+    {
+      "functionDescription": "ConvergenceMethod",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"CONV_METH\").Value",
+      "functionNumber": 116,
+      "extraInputs": ["STANDARD", "PETROLEUM", "NONIDEAL", "AZEOTROPIC", "CRYOGENIC", "OTHERS"]
+    },
+    {
+      "functionDescription": "RefluxRatio",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS_RR\").Value",
+      "functionNumber": 117,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "RefluxRate",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS_L1\").Value",
+      "functionNumber": 118,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "BoilupFlowRate",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS_VN\").Value",
+      "functionNumber": 119,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "BoilupRatio",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS_BR\").Value",
+      "functionNumber": 1110,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "CondenserDuty",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"Q1\").Value",
+      "functionNumber": 1111,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "ReboilerDuty",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"QN\").Value",
+      "functionNumber": 1112,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "TotalDistillateFlowRate",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS_D\").Value",
+      "functionNumber": 1113,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "LiquidBottomsFlowRate",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS\").Elements(\"B\").Value",
+      "functionNumber": 1114,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "DistillateToFeedRatio",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS\").Elements(\"D:F\").Value",
+      "functionNumber": 1115,
+      "extraInputs": []
+    },
+    {
+      "functionDescription": "BottomToFeedRatio",
+      "variablePath": "BLK.Elements(\"<BlockName>\").Elements(\"Input\").Elements(\"BASIS\").Elements(\"B:F\").Value",
+      "functionNumber": 1116,
+      "extraInputs": []
+    }
+  ]
+  

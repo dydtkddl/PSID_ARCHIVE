@@ -1,0 +1,11 @@
+{
+    "name": "khu_server_process_olimpiad_ys",
+    "host": "moana.khu.ac.kr",
+    "protocol": "sftp",
+    "port": 30080,
+    "username": "dydtkddhkdwk",
+    "remotePath": "/data/dydtkddhkdwk/repos/process_olimpiad/",
+    "uploadOnSave": true,
+    "useTempFile": false,
+    "openSsh": false
+}

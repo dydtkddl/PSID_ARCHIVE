@@ -1,0 +1,38 @@
+[
+    {
+      "functionDescription": "Flash Type 옵션 설정",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.MIXED_SPEC.MIXED.Value",
+      "additionalInputs": ["TP", "TV", "PV"]
+    },
+    {
+      "functionDescription": "온도 설정",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.TEMP.Value",
+      "additionalInputs": []
+    },
+    {
+      "functionDescription": "압력 설정",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.PRES.Value",
+      "additionalInputs": []
+    },
+    {
+      "functionDescription": "증기 분율 설정",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.VFRAC",
+      "additionalInputs": []
+    },
+    {
+      "functionDescription": "총 유량 기준 설정",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.FLOWBASE.MIXED.Value",
+      "additionalInputs": ["MASS", "MOLE", "STDVOL", "VOLUME"]
+    },
+    {
+      "functionDescription": "총 유량 설정",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.TOTFLOW.Value",
+      "additionalInputs": []
+    },
+    {
+      "functionDescription": "성분별 유량 설정 (각 화합물 단위)",
+      "variablePath": "AspenSimulation.Tree.Elements(\"Data\").Elements(\"Streams\").\"Streamname\".Input.FLOW.MIXED.<CompoundName>.Value",
+      "additionalInputs": []
+    }
+  ]
+  

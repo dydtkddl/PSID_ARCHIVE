@@ -1,0 +1,47 @@
+# Aspen Plus Case Study 자동화 스크립트 생성 템플릿
+
+## 1. 환경 설정 (Init)
+- ASPEN_FILE:   {Aspen 파일 경로}
+- VISIBLE:      {True|False}
+- CSV_OUTPUT:   {결과 저장할 CSV 파일 경로}
+
+## SHORT_CUT_VARIABLES
+AspenSimulation = win32com.client.gencache.EnsureDispatch("Apwn.Document")
+STRM = AspenSimulation.Tree.Elements("Data").Elements("Streams")
+BLK  = AspenSimulation.Tree.Elements("Data").Elements("Blocks")
+
+## INIT
+AspenSimulation.InitFromArchive2(os.path.abspath(AspenFileName))
+AspenSimulation.Visible = VISIBLE
+
+## 케이스 스터디 대상
+{ 
+    1 : {
+        "VAL_PATH" : "",
+        "INSTRUCTION" : "0~12까지 몇개"
+    }, 
+    2 : {
+        "VAL_PATH" : "",
+        "INSTRUCTION" : "0~12까지 몇개"
+    }
+    ...
+}
+## 수집 아웃풋 및 인풋
+{ 
+    1 : {
+        "VAL_PATH" : ""
+    },
+    2 : {
+        "VAL_PATH" : ""
+    }
+    ...
+}
+
+## 4. 출력 형식
+- CSV 헤더: `["Temperature_K","Pressure_bar","FeedFlow_kmolhr","Prod_MoleFlow"]`  
+- 로깅: `logging.info()` 로 주요 단계 기록  
+
+## 5. 코드 스타일
+- Python 3, `argparse`, `logging`, `csv`, `pywin32(win32com.client)`
+- `def init_args()`, `def init_simulation()`, `def run_case_study()`, `def close_simulation()` 구조
+

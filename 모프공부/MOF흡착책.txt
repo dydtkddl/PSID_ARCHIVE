@@ -1,0 +1,49 @@
+MOF의 흡착을 물리화학적 또는 양자역학적 관점에서 다룬 몇 권의 추천 서적의 정확한 명칭은 다음과 같습니다.
+
+1. "Adsorption and Diffusion in Nanoporous Materials" by Rolando M.A. Roque-Malherbe
+이 책은 다공성 물질에서의 흡착과 확산을 다루며, 특히 MOF의 구조적 특성과 흡착 메커니즘을 설명하는 데 초점을 맞춥니다. 
+열역학, 동역학, 분자적 시뮬레이션 등을 통해 다공성 소재에서의 기체 흡착을 이해할 수 있습니다.
+
+2. "Metal-Organic Frameworks: Applications from Catalysis to Gas Storage" by David Farrusseng
+이 책은 MOF의 응용을 다루지만, 흡착 메커니즘과 기체 저장을 위한 MOF의 구조적 특성에 대한 물리화학적 설명도 포함합니다.
+ MOF 내 기체 분자와의 상호작용을 이해하는 데 도움이 됩니다.
+ 
+3. "Fundamentals of Adsorption" edited by M. Douglas LeVan
+흡착 기초와 이론을 다루며, 특히 다공성 물질에서의 흡착을 심도 있게 설명합니다. 
+MOF와 같은 다공성 고체에 대해 분자 수준에서의 흡착 메커니즘을 이해하는 데 적합합니다.
+
+4. "Computational Methods in Catalysis and Materials Science: An Introduction for Scientists and Engineers" by Rutger A. van Santen and Matthew Neurock
+이 책은 MOF에 특화된 내용은 아니지만, 촉매 및 소재 과학에서의 계산적 접근법을 소개하며, 특히 흡착과 관련된 양자역학적 시뮬레이션 방법을 설명합니다. 
+MOF 연구에서 계산화학적 접근을 이해하는 데 유용합니다.
+
+5. "Adsorption by Powders and Porous Solids: Principles, Methodology and Applications" by Jean Rouquerol, Françoise Rouquerol, Philip Llewellyn, Guillaume Maurin, and Kenneth Sing
+다공성 고체에서의 흡착 현상을 포괄적으로 다룬 책으로, 흡착 원리와 물리화학적 특성, 실험적 방법론을 설명합니다. 
+MOF 흡착 연구를 위한 이론적 배경으로 유용합니다.
+이들 서적은 MOF의 흡착 현상에 대한 물리화학적 및 계산적 관점을 이해하는 데 큰 도움이 될 것입니다.
+
+
+
+
+MOF 흡착 연구에 대한 서적들을 난이도와 발행 순서에 따라 체계적으로 읽는 순서를 다음과 같이 추천드립니다. 기본적인 원리를 먼저 다지고, 점차 심화된 주제로 나아가는 방식입니다.
+
+1. "Adsorption by Powders and Porous Solids: Principles, Methodology and Applications" by Jean Rouquerol, Françoise Rouquerol, Philip Llewellyn, Guillaume Maurin, and Kenneth Sing
+발행년도: 1999 (최신판 2014)
+난이도: 초급-중급
+이유: 흡착의 기초 이론과 다공성 고체에서의 흡착 특성을 포괄적으로 다룹니다. 실험적 방법론까지 포함되어 있어 흡착 연구의 기초를 쌓는 데 이상적입니다. MOF에 국한되지는 않지만, 흡착 연구의 전반적 개념을 확실하게 이해할 수 있습니다.
+2. "Metal-Organic Frameworks: Applications from Catalysis to Gas Storage" by David Farrusseng
+발행년도: 2011
+난이도: 초급-중급
+이유: MOF의 구조적 특성과 응용에 대해 소개하며, 기체 흡착 및 저장에 초점을 맞춥니다. 이 책을 통해 MOF의 실제 응용과 흡착 메커니즘을 알 수 있습니다. 앞서 기본적인 흡착 이론을 다진 후에 읽으면 MOF에 특화된 개념을 더 쉽게 이해할 수 있습니다.
+3. "Adsorption and Diffusion in Nanoporous Materials" by Rolando M.A. Roque-Malherbe
+발행년도: 2007
+난이도: 중급
+이유: 이 책은 나노 다공성 물질에서의 흡착과 확산 메커니즘을 물리화학적으로 깊이 있게 다룹니다. MOF를 포함한 다양한 다공성 물질을 다루므로, 분자적 상호작용과 흡착 메커니즘을 더욱 상세히 이해할 수 있습니다.
+4. "Fundamentals of Adsorption" edited by M. Douglas LeVan
+발행년도: 2011
+난이도: 중급-고급
+이유: 다공성 물질의 흡착 이론을 다루는 심화 교재로, MOF와 같은 고급 소재에 대한 이론적 접근을 제공합니다. 여러 기체와 고체 간의 상호작용을 다양한 실험적 접근법을 통해 설명합니다.
+5. "Computational Methods in Catalysis and Materials Science: An Introduction for Scientists and Engineers" by Rutger A. van Santen and Matthew Neurock
+발행년도: 2009
+난이도: 고급
+이유: 촉매와 소재 과학에서의 계산화학 및 양자역학적 접근법을 소개합니다. 흡착 현상에 대한 양자화학적 시뮬레이션을 이해하기 위해 필수적인 내용들이 담겨 있어, 앞서 흡착 메커니즘을 공부한 후에 읽기 좋습니다. MOF의 흡착 연구에 계산적 접근을 도입하고자 할 때 유용합니다.
+이 순서대로 학습하면 흡착의 기초부터 심화된 MOF 흡착 메커니즘, 계산화학적 접근까지 차근차근 나아갈 수 있습니다.
