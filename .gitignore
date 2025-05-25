@@ -48,3 +48,4 @@ git_push.log
 **/*.exe
 **/*.msi
 **/**.sqlite3
+**/*.dll
